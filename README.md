@@ -15,6 +15,5 @@ Company's revenue come from delivery fee, range from $5.99 on orders over $35 to
 **Partners retailer**: Instacart can aggregate prediction of product purchases by store and send that to partner retailers for inventory planning purchases.
 
 ### Data Source:
-- [Kaggle](https://www.kaggle.com/c/instacart-market-basket-analysis/data) or
-- [Instacart Website](https://www.instacart.com/datasets/grocery-shopping-2017)
+- [Kaggle](https://www.kaggle.com/c/instacart-market-basket-analysis/data) or [Instacart Website](https://www.instacart.com/datasets/grocery-shopping-2017)
 - [Data Dictionary](https://gist.github.com/jeremystan/c3b39d947d9b88b3ccff3147dbcf6c6b)
