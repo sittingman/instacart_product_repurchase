@@ -1,2 +1,3 @@
-# instacart_product_repurchase
+# Instacart Market Basket Analysis
  
+Instacart is eCommerce platform that connect shoppers to stores in respective areas and provide delivery in as fast as an hour. Company work with popular national and regional retailers such as Albertsons, ALDI, Costco, CVS, Kroger, Loblaw, Publix, Sam's Club, Sprouts, and Wegmans, among others. The Instacart marketplace offers more than 300 retailers and trusted local grocers that customers love. Beside door to door delivery, stock pick up option is also available. Company's revenue come from delivery fee, range from $5.99 on orders over $35 to $7.99 on orders under 
