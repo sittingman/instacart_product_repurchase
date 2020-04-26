@@ -6,7 +6,9 @@ Predict products mixes that will be included in the next purchase order by users
 ### Clients: 
 
 **Instacart e-commerce Team**: By knowing user's purchase habits and what user would like to purchase in next order, Instacart can customize product pages to individuals by showing relevant products, which enables better conversion.
+
 **Instacart users**: Users will save time on browsing the needed products, and may find new products of their interests faster, which enhance user experiences.
+
 **Partner retailers**: Instacart can aggregate prediction of product purchases by store and send that to partner retailers for inventory planning purchases.
 
 ### Data:
