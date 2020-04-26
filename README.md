@@ -5,7 +5,7 @@ Instacart is eCommerce platform that connect shoppers to stores in respective ar
 Company's revenue come from delivery fee, range from $5.99 on orders over $35 to $7.99 on orders under $35.
 
 ### Objectives:
-- Predict products mixed that will be included in the next purchase order of a user. That includes products a user will buy again, try for the first time, or add to their cart next during a session.
+- Predict products mixes that will be included in the next purchase order by users. That includes products a user will buy again, try for the first time, or add to their cart next during a session.
 
 
 ### Clients & Impacts:
@@ -14,7 +14,7 @@ Company's revenue come from delivery fee, range from $5.99 on orders over $35 to
 
 **Instacart users**: Users will save time on browsing the needed products, and may find new products of their interests faster, which enhance user experiences.
 
-**Partners retailer**: Instacart can aggregate prediction of product purchases by store and send that to partner retailers for inventory planning purchases.
+**Partner retailers**: Instacart can aggregate prediction of product purchases by store and send that to partner retailers for inventory planning purchases.
 
 ### Data Source:
 - [Kaggle](https://www.kaggle.com/c/instacart-market-basket-analysis/data) or [Instacart Website](https://www.instacart.com/datasets/grocery-shopping-2017)
