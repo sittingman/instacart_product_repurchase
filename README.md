@@ -1,8 +1,8 @@
 # Instacart Market Basket Analysis
  
-Instacart is eCommerce platform that connect shoppers to stores in respective areas and provide delivery in as fast as an hour. Company work with popular national and regional retailers such as Albertsons, ALDI, Costco, CVS, Kroger, Loblaw, Publix, Sam's Club, Sprouts, and Wegmans, among others. The Instacart marketplace offers more than 300 retailers and trusted local grocers that customers love. Beside door to door delivery, stock pick up option is also available. 
+Instacart is eCommerce platform that connects shoppers to stores in respective areas and provides delivery in as fast as an hour. Company works with popular national and regional retailers such as Albertsons, ALDI, Costco, CVS, Kroger, Loblaw, Publix, Sam's Club, Sprouts, and Wegmans, among others. The Instacart marketplace offers more than 300 retailers and trusted local grocers that customers love. Beside door to door delivery, stock pick up option is also available. 
 
-Company's revenue come from delivery fee, range from $5.99 on orders over $35 to $7.99 on orders under $35.
+Company's revenue comes from delivery fee, range from $5.99 on orders over $35 to $7.99 on orders under $35.
 
 ### Objectives:
 - Predict products mixes that will be included in the next purchase order by users. That includes products a user will buy again, try for the first time, or add to their cart next during a session.
@@ -19,3 +19,6 @@ Company's revenue come from delivery fee, range from $5.99 on orders over $35 to
 ### Data Source:
 - [Kaggle](https://www.kaggle.com/c/instacart-market-basket-analysis/data) or [Instacart Website](https://www.instacart.com/datasets/grocery-shopping-2017)
 - [Data Dictionary](https://gist.github.com/jeremystan/c3b39d947d9b88b3ccff3147dbcf6c6b)
+
+
+### Outline of Approach
