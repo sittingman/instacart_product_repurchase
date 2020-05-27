@@ -1,6 +1,6 @@
 # Instacart Market Basket Analysis
  
-Instacart is eCommerce platform that connects shoppers to stores in respective areas and provides delivery in as fast as an hour. Company works with popular national and regional retailers such as Albertsons, ALDI, Costco, CVS, Kroger, Loblaw, Publix, Sam's Club, Sprouts, and Wegmans, among others. The Instacart marketplace offers more than 300 retailers and trusted local grocers that customers love. Beside door to door delivery, stock pick up option is also available. 
+Instacart is a eCommerce platform that connects shoppers to stores in respective areas and provides delivery in as fast as an hour. Company works with popular national and regional retailers such as Albertsons, ALDI, Costco, CVS, Kroger, Loblaw, Publix, Sam's Club, Sprouts, and Wegmans, among others. The Instacart marketplace offers more than 300 retailers and trusted local grocers that customers love. Beside door to door delivery, stock pick up option is also available. 
 
 Company's revenue comes from delivery fee, range from $5.99 on orders over $35 to $7.99 on orders under $35.
 
@@ -55,8 +55,11 @@ Company's revenue comes from delivery fee, range from $5.99 on orders over $35 t
 
 ### Recommendations/next steps
 
-Extreme Gradient Boosting is the recommended model. To maximize F1 score, we were trying to balance between Recall and Precision. From the training, most model only have Recall rate of ~0.5, which mean half of the items won't be classify correct. Hence, with the smaller size of test dataset, we have to lower the probability threshold of classifying 0 or 1 to mitigate the penalty from low recall. The final model has probability threshold set at 0.2.
+Extreme Gradient Boosting is the recommended model. To maximize F1 score, we were trying to balance between Recall and Precision. From the training, most model only have Recall rate of ~0.5, which mean half of the items won't be classified correct. Hence, with the smaller size of test dataset, we have to lower the probability threshold of classifying 0 or 1 to mitigate the penalty from low recall. The final model has probability threshold set at 0.2.
 
 To further improve on the F1 score, we can go back to identify new features. One candidate is the product reorder duration (i.e. how many day would a user to buy the same product again). We attempted to add that to the current model but encountered memory error (the combination of order x product x user is too big in shape). Further study is needed on how to create that feature.
 
 Another option is to create two step models to engineer on maximizing F1 score. The mechanic will be more robust and involve more mathematical engineering on featured. We considered creating a prediction model of number of product to be purchased in the next order. Unfortunately, we did not find consistent purchase pattern at the individual user level. The output turn out to be inferior than one step model. More investigations will be needed.
+
+
+[Final Presentation]
