@@ -42,28 +42,28 @@ Company's revenue comes from a delivery fee, range from $5.99 on orders over $35
     - is the product purchased within the last purchase
     - number of times a product had been purchased in the last 3 orders
     - % of order which a product appeared in user overall purchase history
+    - average days lag of products under certain departments were purchased by users
 
 ### Summary of Findings
 
-|Model | Kaggle Score (F1) |
+|Model | Kaggle Score (F1) | Comments |
 |------| -------------|
-|Naive| 0.31180|
-|Light Gradient Boosting| 0.33601|
-|Random Forest (base) |0.35746 |
-|Random Forest (tuned) | 0.36164 |
-|Extreme Gradient Boosting (base)|0.35970|
-|Extreme Gradient Boosting (tuned)|0.36049|
+|Naive| 0.31180| using last purchase by user |
+|Light Gradient Boosting| 0.36354| with day lag feature |
+|Gradient Boosting | with day lag feature |
+|Random Forest | 0.36164 | without days lag feature |
+|Extreme Gradient Boosting |0.36049| without days lag feature
 
 
 Model Limitations - as the model mainly based on historical purchases of users, it lacks features to predict new product purchases by users. It also won't be able to predict well on product substitutes (for example, users may switch between different snacks that have different product id).
 
+Days lag feature improved F1 score for Lightgbm and Gradient Boosting models but decrease F1 score for Random Forest and Extreme Gradient Boosting.
+
 ### Recommendations/next steps
 
-Both Extreme Gradient Boosting and Random Forecast have a similar level of performance and would recommend both as the final model. To maximize F1 score, we were trying to balance between Recall and Precision. From the training dataset, most models only have Recall rates of ~0.5 (i.e. half of the items won't be classified correctly). With the smaller size of test dataset, we have to lower the probability threshold of classifying 0 or 1 to mitigate the penalty from low recall. The final model has a probability threshold set ~ 0.2.
+Gradient Boosting has the performance would recommend both as the final model. To maximize F1 score, we were trying to balance between Recall and Precision. From the training dataset, most models only have Recall rates of ~0.5 (i.e. half of the purchased items won't be captured by the model). With the smaller size of test dataset, we have to lower the probability threshold of classifying 0 or 1 to mitigate the penalty from low recall. The final model has a probability threshold set ~ 0.2.
 
-To further improve on the F1 score, we can go back to identify new features. One candidate is the product reorder duration (i.e. how many days would a user buy the same product again). We attempted to add that to the current model but encountered memory error (the combination of order x product x user is too big in shape). Further study is needed on how to create that feature.
-
-Another option is to create two-step models to engineer on maximizing F1 score. The mechanic will be more robust and involve more mathematical engineering on featured. We considered creating a model to predict the number of products to be purchased in the next order. Unfortunately, we did not find a consistent purchase pattern in terms of the number of products at the individual user level. More investigations will be needed.
+To further improve on the F1 score, we can consider creating a two-step models to engineer on maximizing F1 score. The mechanic will be more robust and involve more mathematical engineering on features. One idea is to predict the number of products to be purchased in the next order and apply % ranking by user/product to come up with the orders. More investigations will be needed.
 
 
 [Final Presentation]
