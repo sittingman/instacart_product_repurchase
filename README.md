@@ -61,7 +61,7 @@ Days lag feature improved F1 score for Lightgbm and Gradient Boosting models but
 
 ### Recommendations/next steps
 
-Gradient Boosting has the performance would recommend both as the final model. To maximize F1 score, we were trying to balance between Recall and Precision. From the training dataset, most models only have Recall rates of ~0.5 (i.e. half of the purchased items won't be captured by the model). With the smaller size of test dataset, we have to lower the probability threshold of classifying 0 or 1 to mitigate the penalty from low recall. The final model has a probability threshold set ~ 0.2.
+Light Gradient Boosting has the best performance and we would recommend that as the final model. To maximize F1 score, we were trying to balance between Recall and Precision. From the training dataset, most models only have Recall rates of ~0.5 (i.e. half of the purchased items won't be captured by the model). With the smaller size of test dataset, we have to lower the probability threshold of classifying 0 or 1 to mitigate the penalty from low recall. The final model has a probability threshold set ~ 0.2.
 
 To further improve on the F1 score, we can consider creating a two-step models to engineer on maximizing F1 score. The mechanic will be more robust and involve more mathematical engineering on features. One idea is to predict the number of products to be purchased in the next order and apply % ranking by user/product to come up with the orders. More investigations will be needed.
 
