@@ -23,10 +23,10 @@ Company's revenue comes from a delivery fee, range from $5.99 on orders over $35
 
 ### Outline of Approach
 
-* Data Cleansing/Wrangling: Understand the data structures, checking for missing values or invalid records
+* [Data Cleansing/Wrangling](https://github.com/sittingman/instacart_product_repurchase/blob/master/1_data_obtain_wrangling.ipynb): Understand the data structures, checking for missing values or invalid records
     - findings: the data has been cleaned by the data provider, no missing records, and data are in the right data types
 
-* Exploratory: Finding variables that may influence the re-ordering decision by users. Also, identify factors that may changes product mix in orders over time.
+* [Exploratory](https://github.com/sittingman/instacart_product_repurchase/blob/master/2_data_exploratory.ipynb): Finding variables that may influence the re-ordering decision by users. Also, identify factors that may changes product mix in orders over time.
     - findings: 
         - Product categories have different re-order rates, among all beverage (water), diary eggs (milk, yogurt) and produce (fruits) are the most popular items for re-ordering. Pantry items are the least likely to be re-ordered
         - Product categories mix does not vary significantly over time. Users will gradually trade-off one item favor the other, but the re-order items appear to be similar to the previous order that user made
@@ -37,7 +37,7 @@ Company's revenue comes from a delivery fee, range from $5.99 on orders over $35
 
 * Statistical Test: after discussing with my mentor, there isn't an obvious statistical question that is meaningful to be addressed. We will skip this portion for this project.
 
-* Machine Learning: this is a classification problem. With the recommendation from my mentor, we will adopt [PyCaret](https://pycaret.org/guide/) to perform cross-validation on F1 score across multiple classification models. From the exploratory analysis, we will pursue the following features (all at the user/product level):
+* [Machine Learning](https://github.com/sittingman/instacart_product_repurchase/blob/master/3_ML_features.ipynb): this is a classification problem. With the recommendation from my mentor, we will adopt [PyCaret](https://pycaret.org/guide/) to perform cross-validation on F1 score across multiple classification models. From the exploratory analysis, we will pursue the following features (all at the user/product level):
     - number of times of reordering
     - is the product purchased within the last purchase
     - number of times a product had been purchased in the last 3 orders
@@ -66,4 +66,4 @@ Light Gradient Boosting has the best performance and we would recommend that as 
 To further improve on the F1 score, we can consider creating a two-step models to engineer on maximizing F1 score. The mechanic will be more robust and involve more mathematical engineering on features. One idea is to predict the number of products to be purchased in the next order and apply % ranking by user/product to come up with the orders. More investigations will be needed.
 
 
-[Final Presentation]
+[Final Presentation](https://github.com/sittingman/instacart_product_repurchase/blob/master/instacart_presentation.pdf)
