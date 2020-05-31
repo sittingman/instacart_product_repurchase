@@ -1,6 +1,6 @@
 # Instacart Market Basket Analysis
  
-Instacart is an eCommerce platform that connects shoppers to stores in respective areas and provides delivery in as fast as an hour. The company works with popular national and regional retailers such as Albertsons, ALDI, Costco, CVS, Kroger, Loblaw, Publix, Sam's Club, Sprouts, and Wegmans, among others. The Instacart marketplace offers more than 300 retailers and trusted local grocers that customers love. Besides door to door delivery, store pick up option is also available. 
+[Instacart](https://www.instacart.com/) is an eCommerce platform that connects shoppers to stores in respective areas and provides delivery in as fast as an hour. The company works with popular national and regional retailers such as Albertsons, ALDI, Costco, CVS, Kroger, Loblaw, Publix, Sam's Club, Sprouts, and Wegmans, among others. The Instacart marketplace offers more than 300 retailers and trusted local grocers that customers love. Besides door to door delivery, store pick up option is also available. 
 
 Company's revenue comes from a delivery fee, range from $5.99 on orders over $35 to $7.99 on orders under $35.
 
@@ -61,9 +61,10 @@ Days lag feature improved F1 score for Lightgbm and Gradient Boosting models but
 
 ### Recommendations/next steps
 
-Light Gradient Boosting has the best performance and we would recommend that as the final model. To maximize F1 score, we were trying to balance between Recall and Precision. From the training dataset, most models only have Recall rates of ~0.5 (i.e. half of the purchased items won't be captured by the model). With the smaller size of test dataset, we have to lower the probability threshold of classifying 0 or 1 to mitigate the penalty from low recall. The final model has a probability threshold set ~ 0.2.
+Light Gradient Boosting has the best performance and we would recommend that as the final model. To maximize F1 score, we were trying to balance between Recall and Precision. From the training dataset, most models only have Recall rates of ~0.5 (i.e. half of the purchased items won't be captured by the model). With the smaller size of the test dataset, we have to lower the probability threshold of classifying 0 or 1 to mitigate the penalty from low recall. The final model has a probability threshold set ~ 0.2.
 
-To further improve on the F1 score, we can consider creating a two-step models to engineer on maximizing F1 score. The mechanic will be more robust and involve more mathematical engineering on features. One idea is to predict the number of products to be purchased in the next order and apply % ranking by user/product to come up with the orders. More investigations will be needed.
+To further improve on the F1 score, we can consider creating two-step models to engineer on maximizing F1 score. The mechanic will be more robust and involve more mathematical engineering on features. One idea is to predict the number of products to be purchased in the next order and apply % ranking by user/product to come up with the orders. More investigations will be needed.
 
+Obtaining features such as product prices or promotional events would be helpful since grocery is a price elastic shopping category.
 
 [Final Presentation](https://github.com/sittingman/instacart_product_repurchase/blob/master/instacart_presentation.pdf)
