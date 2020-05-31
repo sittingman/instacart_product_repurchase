@@ -47,7 +47,7 @@ Company's revenue comes from a delivery fee, range from $5.99 on orders over $35
 ### Summary of Findings
 
 |Model | Kaggle Score (F1) | Comments |
-|------| -------------|
+|------| -------------| ----- |
 |Naive| 0.31180| using last purchase by user |
 |Light Gradient Boosting| 0.36354 | with day lag feature |
 |Gradient Boosting | 0.36244 | with day lag feature |
