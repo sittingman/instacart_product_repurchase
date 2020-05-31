@@ -51,7 +51,7 @@ Company's revenue comes from a delivery fee, range from $5.99 on orders over $35
 |Naive| 0.31180| using last purchase by user |
 |Light Gradient Boosting| 0.36354 | with day lag feature |
 |Gradient Boosting | 0.36244 | with day lag feature |
-|Random Forest | 0.36164 | without days lag feature |
+|Random Forest | 0.3625 | without days lag feature |
 |Extreme Gradient Boosting |0.36049| without days lag feature |
 
 
