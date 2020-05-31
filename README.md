@@ -68,3 +68,5 @@ To further improve on the F1 score, we can consider creating two-step models to 
 Obtaining features such as product prices or promotional events would be helpful since grocery is a price elastic shopping category.
 
 [Final Presentation](https://github.com/sittingman/instacart_product_repurchase/blob/master/instacart_presentation.pdf)
+
+[Capstone Report](https://github.com/sittingman/instacart_product_repurchase/blob/master/capstone_report_instacart.pdf)
